@@ -10,7 +10,7 @@ terraform {
 provider "linux" {
     host     = "54.226.188.243"
     port     = 22
-    user     = "unnati"
+    user     = "root"
     password = "test"
 }
 
