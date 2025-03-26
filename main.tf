@@ -14,8 +14,6 @@ provider "linux" {
     password = "test"
 }
 
-resource "linux_file" "unnatifile" {
-    path    = "/tmp/testfile.txt"
-    content = "This is a test file created by Terraform."
-    mode    = "0644"
+resource "linux_directory" "unnatadir" {
+    path = "/tmp/testdir"
 }
