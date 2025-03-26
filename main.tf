@@ -15,6 +15,7 @@ provider "linux" {
 }
 
 resource "linux_file" "unnatifile" {
-    path = "/tmp/testdir"
+    path    = "/tmp/testfile.txt"
+    content = "This is a test file created by Terraform."
+    mode    = "0644"
 }
-
